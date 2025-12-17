@@ -37,7 +37,7 @@ The identity injection module (**InfuseNet**) remains unchanged.
   Official release by Black Forest Labs (optimized for low-step diffusion):  
   https://huggingface.co/black-forest-labs/FLUX.1-schnell
 
-Please follow the official instructions and license terms when downloading and using these models.
+Please download it manually through the official website link.
 
 ---
 
@@ -47,7 +47,7 @@ Please follow the official instructions and license terms when downloading and u
   Official repository:  
   https://huggingface.co/ByteDance/InfiniteYou
 
-Refer to the original InfiniteYou repository for pretrained weights and usage details.
+Please download it manually through the official website link
 
 ---
 
