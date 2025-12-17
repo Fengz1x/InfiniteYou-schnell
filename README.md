@@ -23,14 +23,6 @@ The identity injection module (**InfuseNet**) remains unchanged.
 * Precision: BF16
 * Timing: averaged over 50 runs
 
----
-
-## Notes
-
-This repository is intended for **research exploration** of speed–quality trade-offs and is not a production-ready system.
-
----
-
 --
 
 ## Model Weights
