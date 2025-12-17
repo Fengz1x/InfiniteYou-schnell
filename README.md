@@ -45,7 +45,7 @@ Please follow the official instructions and license terms when downloading and u
 
 - **InfiniteYou (InfuseNet + identity encoder)**  
   Official repository:  
-  https://github.com/<official-infiniteyou-repo>
+  https://huggingface.co/ByteDance/InfiniteYou
 
 Refer to the original InfiniteYou repository for pretrained weights and usage details.
 
