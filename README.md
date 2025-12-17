@@ -23,7 +23,7 @@ The identity injection module (**InfuseNet**) remains unchanged.
 * Realism LoRA improves texture details and perceptual realism
 * **4 steps with FLUX.1-schnell + Realism LoRA** provides the best speed–quality balance
 
---
+---
 
 ## Model Weights
 
