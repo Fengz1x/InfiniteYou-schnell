@@ -7,21 +7,21 @@ The identity injection module (**InfuseNet**) remains unchanged.
 
 ---
 
-## Key Observations
-
-* **2–3× inference speedup** using FLUX.1-schnell at 1–4 diffusion steps
-* Noticeable quality degradation at extremely low steps (1–2)
-* Realism LoRA improves texture details and perceptual realism
-* **4 steps with FLUX.1-schnell + Realism LoRA** provides the best speed–quality balance
-
----
-
 ## Experimental Setup
 
 * Diffusion steps: 1–4 / 32
 * GPU: NVIDIA A100
 * Precision: BF16
 * Timing: averaged over 50 runs
+
+---
+
+## Result
+
+* **2–3× inference speedup** using FLUX.1-schnell at 1–4 diffusion steps
+* Noticeable quality degradation at extremely low steps (1–2)
+* Realism LoRA improves texture details and perceptual realism
+* **4 steps with FLUX.1-schnell + Realism LoRA** provides the best speed–quality balance
 
 --
 
