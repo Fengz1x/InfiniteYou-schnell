@@ -31,11 +31,11 @@ The identity injection module (**InfuseNet**) remains unchanged.
 
 - **FLUX.1-dev**  
   Official release by Black Forest Labs:  
-  https://blackforestlabs.ai/announcing-black-forest-labs/
+  https://huggingface.co/black-forest-labs/FLUX.1-dev
 
 - **FLUX.1-schnell**  
   Official release by Black Forest Labs (optimized for low-step diffusion):  
-  https://blackforestlabs.ai/announcing-black-forest-labs/
+  https://huggingface.co/black-forest-labs/FLUX.1-schnell
 
 Please follow the official instructions and license terms when downloading and using these models.
 
