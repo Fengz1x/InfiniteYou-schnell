@@ -1,34 +1,31 @@
 Two Ways to Improve Portrait Generation in InfiniteYou: Base Model Replacement + anti-realism LoRA
 
-This repository studies how to accelerate InfiniteYou for personalized image generation under low-step diffusion.
+\section*{InfiniteYou-schnell}
 
-We replace the original backbone FLUX.1-dev with FLUX.1-schnell and add a lightweight Realism LoRA to reduce quality degradation at low sampling steps.
-The identity injection module (InfuseNet) is kept unchanged.
+This work studies how to \textbf{accelerate InfiniteYou} for personalized image generation under low-step diffusion.
 
-Key observations
+We replace the original backbone \textbf{FLUX.1-dev} with \textbf{FLUX.1-schnell} and introduce a lightweight \textbf{Realism LoRA} to reduce quality degradation at low sampling steps.
+The identity injection module (\textbf{InfuseNet}) is kept unchanged.
 
-FLUX.1-schnell achieves about 2–3× faster inference at 1–4 diffusion steps.
+\subsection*{Key Observations}
+\begin{itemize}
+\item FLUX.1-schnell achieves approximately \textbf{2--3$\times$ faster inference} at 1--4 diffusion steps.
+\item Image quality degrades noticeably at very low steps (1--2).
+\item Realism LoRA improves visual realism and texture details.
+\item \textbf{4 steps with FLUX.1-schnell + Realism LoRA} provides the best speed--quality balance.
+\end{itemize}
 
-Image quality degrades at very low steps (1–2).
+\subsection*{Experimental Setup}
+\begin{itemize}
+\item Steps: 1--4 / 32
+\item GPU: NVIDIA A100
+\item Precision: BF16
+\item Timing: averaged over 50 runs
+\end{itemize}
 
-Realism LoRA improves visual realism and texture details.
+\subsection*{Notes}
+This work is intended for \textbf{research exploration} of speed--quality trade-offs rather than production use.
 
-4 steps with FLUX.1-schnell + Realism LoRA provides the best speed–quality balance.
+\subsection*{References}
+InfiniteYou (2025), FLUX.1 (2024), LoRA (ICLR 2022).
 
-Setup
-
-Steps: 1–4 / 32
-
-GPU: NVIDIA A100
-
-Precision: BF16
-
-Timing: averaged over 50 runs
-
-Notes
-
-This repository is for research exploration of speed–quality trade-offs, not for production use.
-
-References
-
-InfiniteYou (2025) · FLUX.1 (2024) · LoRA (ICLR 2022)
