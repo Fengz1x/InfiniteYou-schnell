@@ -31,6 +31,44 @@ This repository is intended for **research exploration** of speed–quality trad
 
 ---
 
+--
+
+## Model Weights
+
+### Base Diffusion Models
+
+- **FLUX.1-dev**  
+  Official release by Black Forest Labs:  
+  https://blackforestlabs.ai/announcing-black-forest-labs/
+
+- **FLUX.1-schnell**  
+  Official release by Black Forest Labs (optimized for low-step diffusion):  
+  https://blackforestlabs.ai/announcing-black-forest-labs/
+
+Please follow the official instructions and license terms when downloading and using these models.
+
+---
+
+### InfiniteYou Identity Module
+
+- **InfiniteYou (InfuseNet + identity encoder)**  
+  Official repository:  
+  https://github.com/<official-infiniteyou-repo>
+
+Refer to the original InfiniteYou repository for pretrained weights and usage details.
+
+---
+
+### Realism LoRA
+
+- **Realism LoRA (used in this study)**  
+  Download link:  
+  https://github.com/Fengz1x/InfiniteYou-schnell/releases/tag/realism-lora
+
+This LoRA is provided for research and evaluation purposes only.
+
+--
+
 ## References
 
 * InfiniteYou (2025)
