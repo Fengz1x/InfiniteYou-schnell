@@ -1,31 +1,38 @@
-Two Ways to Improve Portrait Generation in InfiniteYou: Base Model Replacement + anti-realism LoRA
+# Two Ways to Improve Portrait Generation in InfiniteYou: Base Model Replacement + anti-realism LoRA
 
-\section*{InfiniteYou-schnell}
+This repository explores how to **accelerate InfiniteYou** for personalized image generation under low-step diffusion sampling.
 
-This work studies how to \textbf{accelerate InfiniteYou} for personalized image generation under low-step diffusion.
+We replace the original backbone **FLUX.1-dev** with **FLUX.1-schnell**, and introduce a lightweight **Realism LoRA** to mitigate visual quality degradation at low sampling steps.
+The identity injection module (**InfuseNet**) remains unchanged.
 
-We replace the original backbone \textbf{FLUX.1-dev} with \textbf{FLUX.1-schnell} and introduce a lightweight \textbf{Realism LoRA} to reduce quality degradation at low sampling steps.
-The identity injection module (\textbf{InfuseNet}) is kept unchanged.
+---
 
-\subsection*{Key Observations}
-\begin{itemize}
-\item FLUX.1-schnell achieves approximately \textbf{2--3$\times$ faster inference} at 1--4 diffusion steps.
-\item Image quality degrades noticeably at very low steps (1--2).
-\item Realism LoRA improves visual realism and texture details.
-\item \textbf{4 steps with FLUX.1-schnell + Realism LoRA} provides the best speed--quality balance.
-\end{itemize}
+## Key Observations
 
-\subsection*{Experimental Setup}
-\begin{itemize}
-\item Steps: 1--4 / 32
-\item GPU: NVIDIA A100
-\item Precision: BF16
-\item Timing: averaged over 50 runs
-\end{itemize}
+* **2–3× inference speedup** using FLUX.1-schnell at 1–4 diffusion steps
+* Noticeable quality degradation at extremely low steps (1–2)
+* Realism LoRA improves texture details and perceptual realism
+* **4 steps with FLUX.1-schnell + Realism LoRA** provides the best speed–quality balance
 
-\subsection*{Notes}
-This work is intended for \textbf{research exploration} of speed--quality trade-offs rather than production use.
+---
 
-\subsection*{References}
-InfiniteYou (2025), FLUX.1 (2024), LoRA (ICLR 2022).
+## Experimental Setup
 
+* Diffusion steps: 1–4 / 32
+* GPU: NVIDIA A100
+* Precision: BF16
+* Timing: averaged over 50 runs
+
+---
+
+## Notes
+
+This repository is intended for **research exploration** of speed–quality trade-offs and is not a production-ready system.
+
+---
+
+## References
+
+* InfiniteYou (2025)
+* FLUX.1 models by Black Forest Labs (2024)
+* LoRA: Low-Rank Adaptation (ICLR 2022)
